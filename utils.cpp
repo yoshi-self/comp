@@ -1,5 +1,14 @@
 #include <bits/stdc++.h>
 
+// whole string tolower
+void stringToLower(std::string &str) {
+  std::transform(str.begin(), str.end(), str.begin(), ::tolower);
+}
+// whole string toupper
+void stringToUpper(std::string &str) {
+  std::transform(str.begin(), str.end(), str.begin(), ::toupper);
+}
+
 // split a string to vector<string>
 std::vector<std::string> split(const std::string &str, char delim) {
   std::istringstream stream(str);
